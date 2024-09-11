@@ -1,21 +1,17 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
-
 # Getting Started
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+> **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
-## Step 1: Start the Metro Server
+## Step 1: Install Dependecies
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
-
-To start Metro, run the following command from the _root_ of your React Native project:
+Run the following command from the _root_ of your React Native project:
 
 ```bash
 # using npm
-npm start
+npm install
 
 # OR using Yarn
-yarn start
+yarn install
 ```
 
 ## Step 2: Start your Application
@@ -31,6 +27,7 @@ npm run android
 # OR using Yarn
 yarn android
 ```
+note: run android will be find Emulator or Devices automatically.
 
 ### For iOS
 
@@ -41,39 +38,80 @@ npm run ios
 # OR using Yarn
 yarn ios
 ```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+note: run IOS will be find IOS Simulator automatically.
 
 ## Congratulations! :tada:
 
 You've successfully run and modified your React Native App. :partying_face:
 
-### Now what?
+#Structure Project?
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+```bash
+├── assets
+│   └── fonts
+│       ├── Poppins-Bold.ttf
+│       ├── Poppins-Light.ttf
+│       ├── Poppins-Regular.ttf
+│       └── Poppins-SemiBold.ttf
+├── constants
+│   ├── colors.js
+│   └── fonts.js
+├── helpers
+│   └── async.js
+├── navigation
+│   ├── MainNavigator.js
+│   └── index.js
+├── redux
+│   ├── actions
+│   │   ├── task.js
+│   │   └── types.js
+│   ├── reducers
+│   │   ├── index.js
+│   │   └── task.js
+│   └── store
+│       └── index.js
+├── screens
+│   ├── DetailTaskScreen.js
+│   ├── HomeScreen.js
+│   ├── TaskScreen.js
+│   └── styles.js
+└── utils
+    └── snackbar.js
+```
 
-# Troubleshooting
+This template follows a very simple project structure:
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+#### **src** folder
 
-# Learn More
+This folder is the main container of all the code inside your application.
 
-To learn more about React Native, take a look at the following resources:
+##### **assets** folder
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+As the name says, it contains assets of our project. It consists all your static assets, such as fonts and images. It’s a good idea to organize these assets into separate subdirectories for each asset type.
+
+##### **constants** folder
+
+This Folder stores any kind of constant that you have.
+
+##### **helper** folder
+
+Define helper functions in this folder. There are some functions that you might need across your application which generate some certain data or do something special. It’s better to keep them separate from components in order to make them reusable and make your code cleaner.
+
+##### **redux** folder
+
+If you're using Redux in your app, you should create a separate folder for Redux files. The redux folder should contain the following structure:
+
+- actions: include all the functions that Dispatch to change the state of store.
+- reducer: include all redux reducers.
+- store: state container which holds the application's state.
+
+# Screenshoot  how app works.
+1. Home Page
+
+2.  Popup Filter Page
+
+3. Add Task Page
+
+4. Detail Task Page (with status *todo*)
+
+5. Detail Task Page (with status *done*)

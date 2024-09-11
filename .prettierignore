@@ -1,0 +1,11 @@
+# Ignore artifacts:
+build
+coverage
+vendor
+ios
+android
+
+# Ignore all HTML files:
+*.lock
+*.md
+*.cjs
