@@ -107,12 +107,12 @@ If you're using Redux in your app, you should create a separate folder for Redux
 
 # Screenshoot  how app works.
 1. Home Page
-    ![alt text]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg](https://github.com/vbagustinus/AltechTechnicalTest/blob/main/src/assets/images/home.jpeg)?raw=true)
+    ![alt text](https://github.com/vbagustinus/AltechTechnicalTest/blob/main/src/assets/images/home.jpeg)
 2. Popup Filter Page
-    ![alt text]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg](https://github.com/vbagustinus/AltechTechnicalTest/blob/main/src/assets/images/popuphome.jpeg)?raw=true)
+    ![alt text](https://github.com/vbagustinus/AltechTechnicalTest/blob/main/src/assets/images/popuphome.jpeg)
 3. Add Task Page
-    ![alt text]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg](https://github.com/vbagustinus/AltechTechnicalTest/blob/main/src/assets/images/addtask.jpeg)?raw=true)
+    ![alt text](https://github.com/vbagustinus/AltechTechnicalTest/blob/main/src/assets/images/addtask.jpeg)
 4. Detail Task Page (with status *todo*)
-    ![alt text]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg](https://github.com/vbagustinus/AltechTechnicalTest/blob/main/src/assets/images/detailtodo.jpeg)?raw=true)
+    ![alt text](https://github.com/vbagustinus/AltechTechnicalTest/blob/main/src/assets/images/detailtodo.jpeg)
 5. Detail Task Page (with status *done*)
-    ![alt text]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg](https://github.com/vbagustinus/AltechTechnicalTest/blob/main/src/assets/images/detaildone.jpeg)?raw=true)
+    ![alt text](https://github.com/vbagustinus/AltechTechnicalTest/blob/main/src/assets/images/detaildone.jpeg)
