@@ -105,7 +105,20 @@ If you're using Redux in your app, you should create a separate folder for Redux
 - reducer: include all redux reducers.
 - store: state container which holds the application's state.
 
-# Screenshoot  how app works.
+# how to build apk.
+
+##### Run script at root project
+
+```bash
+yarn bundle && yarn android build
+```
+##### The build results will be located in this folder
+
+``` bash
+./android/app/build/outputs/apk/release/*
+```
+
+# Screenshoot how app works.
 1. Home Page
     ![alt text](https://github.com/vbagustinus/AltechTechnicalTest/blob/main/src/assets/images/home.jpeg)
 2. Popup Filter Page
