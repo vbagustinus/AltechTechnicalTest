@@ -31,7 +31,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import {getListTask} from '../redux/actions/task';
 import {colors} from '../constants/colors';
 
-export const ListItem = React.memo(({item, viewableItems, nav, index}) => {
+const ListItem = React.memo(({item, viewableItems, nav, index}) => {
   const rStyle = useAnimatedStyle(() => {
     const isVisible = Boolean(
       viewableItems.value
@@ -105,7 +105,7 @@ const CheckBox = ({checked, title, onPress}) => {
   );
 };
 
-export default function Home({navigation}) {
+const Home = ({navigation}) => {
   const viewableItems = useSharedValue([]);
   const dispatch = useDispatch();
   const task = useSelector(state => state.Task.list);
@@ -168,7 +168,7 @@ export default function Home({navigation}) {
         </Animated.View>
         <Animated.View entering={FadeInRight.duration(400).springify()}>
           <TouchableOpacity
-            testID='addTaskButton'
+            testID="addTaskButton"
             style={styles.iconAddTaskContainer}
             onPress={() => navigation.push('TaskScreen')}>
             <Icon name="add-circle-outline" color={colors.primary} size={40} />
@@ -291,6 +291,6 @@ export default function Home({navigation}) {
       </Modal>
     </SafeAreaView>
   );
-}
+};
 
-export {Home};
+export default Home;
